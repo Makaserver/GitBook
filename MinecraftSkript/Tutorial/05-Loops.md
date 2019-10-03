@@ -32,5 +32,5 @@ command /반복빼기:
 ```JavaScript
 command /배열변수추가:
     trigger:
-        
+    
 ```
