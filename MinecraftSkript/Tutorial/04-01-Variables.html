@@ -65,7 +65,7 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../Doit/" />
+    <link rel="next" href="04-02-Variables.html" />
     
     
     <link rel="prev" href="03-MakeOwnCommand.html" />
@@ -190,6 +190,32 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.1.5" data-path="04-02-Variables.html">
+            
+                <a href="04-02-Variables.html">
+            
+                    
+                    1.4.2 배열변수와 임시변수
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="05-Loops.html">
+            
+                <a href="05-Loops.html">
+            
+                    
+                    1.5 반복문
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -258,15 +284,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#xBCC0;&#xC218;&#xC5D0;-&#xB300;&#xD558;&#xC5EC;">&#xBCC0;&#xC218;&#xC5D0; &#xB300;&#xD558;&#xC5EC;</h1>
+                                <h1 id="141-&#xBCC0;&#xC218;&#xC5D0;-&#xB300;&#xD558;&#xC5EC;&#xAE30;&#xBCF8;&#xC801;&#xC778;-&#xC774;&#xB860;">1.4.1 &#xBCC0;&#xC218;&#xC5D0; &#xB300;&#xD558;&#xC5EC;(&#xAE30;&#xBCF8;&#xC801;&#xC778; &#xC774;&#xB860;)</h1>
 <p>&#xCC38;&#xACE0;&#xB85C;, &#xC774; &#xBCC0;&#xC218; &#xAC15;&#xC758;&#xB294; &#xCD1D; 2&#xD3B8;&#xC73C;&#xB85C; &#xC81C;&#xC791;&#xB418;&#xC5B4; &#xC788;&#xC74C;&#xC744; &#xC54C;&#xB824;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;</p>
 <h2 id="&#xBAA9;&#xD45C;">&#xBAA9;&#xD45C;</h2>
 <p>&#xC774;&#xBC88; &#xC2DC;&#xAC04;&#xC5D0;&#xB294;, &#xBCC0;&#xC218;&#xC758; &#xAC1C;&#xB150;&#xACFC;, &#xBCC0;&#xC218;&#xC758; &#xD65C;&#xC6A9;&#xC744; &#xC54C;&#xB824;&#xB4DC;&#xB9B4;&#xAC81;&#xB2C8;&#xB2E4;</p>
 <h2 id="&#xAC1C;&#xB150;">&#xAC1C;&#xB150;</h2>
 <p>&#xBA3C;&#xC800;, &#xC6B0;&#xB9AC;&#xAC00; &#xC911;&#xD559;&#xAD50; 1&#xD559;&#xB144; 1&#xD559;&#xAE30;&#xB54C; &#xBC30;&#xC6E0;&#xB358; &#xBCC0;&#xC218;&#xAC00; &#xBB34;&#xC5C7;&#xC778;&#xC9C0;&#xBD80;&#xD130; &#xC0DD;&#xAC01;&#xD574; &#xBCFC;&#xAE4C;&#xC694;?<br>
 &#xC6B0;&#xB9AC;&#xB294; &#xC911;1 1&#xD559;&#xAE30; &#xC218;&#xD559;&#xC2DC;&#xAC04;&#xC5D0; &#xBCC0;&#xC218;&#xB97C; &#xC5B4;&#xB5A4; &#xAD00;&#xACC4;&#xB098; &#xBC94;&#xC704; &#xC548;&#xC5D0;&#xC11C; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0; &#xAC12;&#xC73C;&#xB85C; &#xC784;&#xC758;&#xB85C; &#xBCC0;&#xD560; &#xC218; &#xC788;&#xB294; &#xC218;&#xB77C;&#xACE0; &#xBC30;&#xC6E0;&#xC744; &#xAC81;&#xB2C8;&#xB2E4;.<br>
-&#xC790;, &#xADF8;&#xB7FC; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0;&#xC11C;&#xC758; &#xBCC0;&#xC218;&#xB294; &#xBB34;&#xC5C7;&#xC77C;&#xAE4C;&#xC694;?
-&#xC6B0;&#xB9AC;&#xAC00; &#xC911;1 1&#xD559;&#xAE30;&#xB54C; &#xBC30;&#xC6E0;&#xB358; &#xBCC0;&#xC218;&#xC640; &#xAC19;&#xC740; &#xC758;&#xBBF8;&#xC785;&#xB2C8;&#xB2E4;. &#xB9D0; &#xADF8;&#xB300;&#xB85C; &#xBCC0;&#xD560; &#xC218; &#xC788;&#xB294; &#xC218;&#xC8E0;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;, &#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC758; let&#xC774; &#xC788;&#xACA0;&#xB124;&#xC694;.</p>
+&#xC790;, &#xADF8;&#xB7FC; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0;&#xC11C;&#xC758; &#xBCC0;&#xC218;&#xB294; &#xBB34;&#xC5C7;&#xC77C;&#xAE4C;&#xC694;? &#xBCC0;&#xC218;&#xB294; &#xAC12;&#xC744; &#xC800;&#xC7A5;&#xD558;&#xB294; &#xAC00;&#xBC29;&#xAC19;&#xC740; &#xC874;&#xC7AC;&#xB77C;&#xACE0; &#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <h2 id="&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0;&#xC11C;&#xC758;-&#xBCC0;&#xC218;">&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0;&#xC11C;&#xC758; &#xBCC0;&#xC218;</h2>
 <p>&#xBCC0;&#xC218;&#xB294; &#xC5EC;&#xB7EC;&#xAC00;&#xC9C0;&#xB85C; &#xC4F0;&#xC785;&#xB2C8;&#xB2E4;. &#xAC70;&#xC758; &#xBAA8;&#xB4E0; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xC5D0;&#xC11C; &#xBCC0;&#xC218;&#xAC00; &#xD558;&#xB098; &#xC774;&#xC0C1;&#xC740; &#xB4E4;&#xC5B4;&#xAC00;&#xC8E0;. &#xADF8;&#xB9CC;&#xD07C; &#xBCC0;&#xC218;&#xB97C; &#xC54C;&#xBA74;, &#xC88B;&#xB2E4;&#xB294; &#xB9D0;&#xC785;&#xB2C8;&#xB2E4;.</p>
 <h3 id="&#xBCC0;&#xC218;&#xC758;-&#xC885;&#xB958;">&#xBCC0;&#xC218;&#xC758; &#xC885;&#xB958;</h3>
@@ -315,8 +340,19 @@ command /&#xC124;&#xC815;:
 </blockquote>
 <p>&#xC790;, &#xC774;&#xC81C; &#xD55C;&#xBC88; <code>/&#xC124;&#xC815;</code>&#xC774;&#xB77C;&#xACE0; &#xC785;&#xB825;&#xD574; &#xBCF4;&#xACE0;, &#xB2E4;&#xC2DC; <code>/&#xD655;&#xC778;</code>&#xC744; &#xCCD0; &#xBD05;&#xC2DC;&#xB2E4;. &#xADF8;&#xB7EC;&#xBA74;, &#xC774;&#xC81C; <code>0</code>&#xC774;&#xB77C;&#xACE0; &#xB098;&#xC62C; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. &#xC65C;&#xB0D0;&#xD558;&#xBA74;, &#xC6B0;&#xB9AC;&#xAC00; &#xC544;&#xAE4C;&#xC804;&#xC5D0; /&#xC124;&#xC815; &#xC774;&#xB77C;&#xB294; &#xBA85;&#xB839;&#xC5B4;&#xC5D0; &#xC11C; <code>set {&#xBCC0;&#xC218;} to 0</code>&#xC774;&#xB77C;&#xB294; &#xCF54;&#xB4DC;&#xB97C; &#xB123;&#xC5C8;&#xC5C8;&#xAE30; &#xB54C;&#xBB38;&#xC785;&#xB2C8;&#xB2E4;. &#xB530;&#xB77C;&#xC11C;, <code>set {&#xBCC0;&#xC218;} to (&#xC22B;&#xC790; or &#xD14D;&#xC2A4;&#xD2B8; or &#xBD88;&#xB9AC;&#xC5B8;(true/false))</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74;, {&#xBCC0;&#xC218;}&#xB97C; to &#xB4A4;&#xC5D0; &#xC788;&#xB294; &#xAC83;&#xC73C;&#xB85C; &#xC124;&#xC815;&#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xC54C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
 <blockquote>
-<p>&#xCC38;&#xACE0;: set {&#xBCC0;&#xC218;} to (&#xD14D;&#xC2A4;&#xD2B8;)&#xC77C; &#xACBD;&#xC6B0;&#xC5D0;&#xB294;, &#xC124;&#xC815;&#xD558;&#xB824;&#xB294; &#xD14D;&#xC2A4;&#xD2B8; &#xC0AC;&#xC774;&#xC5D0; &#xD070;&#xB530;&#xC634;&#xD45C;&#xB97C; &#xC801;&#xC73C;&#xC154;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;</p>
+<p>&#xCC38;&#xACE0;: set {&#xBCC0;&#xC218;} to (&#xD14D;&#xC2A4;&#xD2B8;)&#xC77C; &#xACBD;&#xC6B0;&#xC5D0;&#xB294;, &#xC124;&#xC815;&#xD558;&#xB824;&#xB294; &#xD14D;&#xC2A4;&#xD2B8; &#xC0AC;&#xC774;&#xC5D0; &#xD070;&#xB530;&#xC634;&#xD45C;&#xB97C; &#xC801;&#xC73C;&#xC154;&#xC57C; &#xD569;&#xB2C8;&#xB2E4;!</p>
 </blockquote>
+<h4 id="&#xC9C0;&#xAE08;&#xBD80;&#xD130;-&#xB9D0;&#xD558;&#xB294;-&#xAC83;&#xC740;-&#xBCC0;&#xC218;&#xC758;-&#xD0C0;&#xC785;&#xC774;-&#xC22B;&#xC790;&#xC77C;-&#xB54C;&#xC5D0;&#xB9CC;-&#xC131;&#xB9BD;&#xD569;&#xB2C8;&#xB2E4;">&#xC9C0;&#xAE08;&#xBD80;&#xD130; &#xB9D0;&#xD558;&#xB294; &#xAC83;&#xC740; {&#xBCC0;&#xC218;}&#xC758; &#xD0C0;&#xC785;&#xC774; &#xC22B;&#xC790;&#xC77C; &#xB54C;&#xC5D0;&#xB9CC; &#xC131;&#xB9BD;&#xD569;&#xB2C8;&#xB2E4;.</h4>
+<blockquote>
+<p>&#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xC5D0;&#xC11C;&#xB294; &#xC0AC;&#xC6A9;&#xC774; &#xAC00;&#xB2A5;&#xD558;&#xC9C0;&#xB9CC;, &#xC774;&#xAC83;&#xC740; &#xB098;&#xC911;&#xC5D0; &#xB2E4;&#xB8E8;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;</p>
+</blockquote>
+<p>&#xC790;, &#xADF8;&#xB7FC; &#xC774;&#xC81C; <code>/&#xB354;&#xD558;&#xAE30;</code>&#xB77C;&#xB294; &#xCEE4;&#xB9E8;&#xB4DC;&#xB97C; &#xD55C;&#xBC88; &#xB2E4;&#xB904;&#xBCFC;&#xAE4C;&#xC694;? &#xBA3C;&#xC800;, <code>/&#xB354;&#xD558;&#xAE30;</code>&#xB77C;&#xB294; &#xCEE4;&#xB9E8;&#xB4DC;&#xB97C; &#xCE58;&#xACE0;, <code>/&#xD655;&#xC778;</code>&#xC744; &#xCCD0; &#xBD05;&#xC2DC;&#xB2E4;. &#xADF8;&#xB7EC;&#xBA74;, <code>0</code>&#xC774; &#xC544;&#xB2C8;&#xB77C; <code>1</code>&#xC774; &#xB098;&#xC624;&#xAC8C; &#xB420; &#xAEC0;&#xB370;&#xC694;, &#xC774;&#xAC83;&#xC744; &#xBCF4;&#xBA74;, <code>add (&#xC22B;&#xC790;) to {&#xBCC0;&#xC218;}</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74;, {&#xBCC0;&#xC218;}&#xB77C;&#xB294; &#xBCC0;&#xC218;&#xC5D0; (&#xC22B;&#xC790;)&#xB97C; &#xB354;&#xD55C;&#xB2E4; &#xB77C;&#xACE0; &#xBCF4;&#xC2DC;&#xBA74; &#xB420;&#xB4EF;&#xD569;&#xB2C8;&#xB2E4;.<br></p>
+<p><br></p>
+<p>&#xC790;, &#xADF8;&#xB7FC; &#xC624;&#xB298;&#xC758; &#xB9C8;&#xC9C0;&#xB9C9;, <code>/&#xBE7C;&#xAE30;</code>&#xB77C;&#xB294; &#xCEE4;&#xB9E8;&#xB4DC;&#xB97C; &#xD55C;&#xBC88; &#xB2E4;&#xB904;&#xBD05;&#xC2DC;&#xB2E4;! &#xBA3C;&#xC800;, &#xC544;&#xAE4C; &#xB354;&#xD558;&#xAE30;&#xB97C; &#xB2E4;&#xB918;&#xB358; &#xAC83;&#xACFC; &#xAC19;&#xC774;, <code>/&#xBE7C;&#xAE30;</code>&#xB77C;&#xB294; &#xCEE4;&#xB9E8;&#xB4DC;&#xB97C; &#xCE58;&#xACE0;, <code>/&#xD655;&#xC778;</code>&#xC744; &#xCCD0; &#xBD05;&#xC2DC;&#xB2E4;. &#xADF8;&#xB7EC;&#xBA74;, <code>1</code>&#xC774; &#xC544;&#xB2C8;&#xB77C;, &#xC544;&#xAE4C; &#xC124;&#xC815;&#xD588;&#xC5C8;&#xB358;, <code>0</code>&#xC774; &#xB098;&#xC635;&#xB2C8;&#xB2E4;. &#xC774;&#xB97C; &#xD1B5;&#xD574;, <code>remove {&#xBCC0;&#xC218;} from (&#xC22B;&#xC790;)</code>&#xB77C;&#xB294; &#xAC83;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xBA74;, {&#xBCC0;&#xC218;}&#xC5D0;&#xC11C; (&#xC22B;&#xC790;)&#xB9CC;&#xD07C; &#xBE80;&#xB2E4;&#xB294; &#xAC83;&#xC774; &#xB429;&#xB2C8;&#xB2E4;. </p>
+<blockquote>
+<p>&#xC774; <code>remove</code> &#xBFD0;&#xB9CC; &#xC544;&#xB2C8;&#xB77C;, <code>subtract {&#xBCC0;&#xC218;} from (&#xC22B;&#xC790;)</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC154;&#xB3C4; &#xB3D9;&#xC77C;&#xD574; &#xC9D1;&#xB2C8;&#xB2E4;. &#xC804; <code>remove</code>&#xB85C; &#xACC4;&#xC18D; &#xAC15;&#xC758;&#xB97C; &#xC9C4;&#xD589;&#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;!</p>
+</blockquote>
+<p>&#xC790;, &#xADF8;&#xB7FC;, &#xC774;&#xC0C1;&#xC73C;&#xB85C; 1.4.1&#xC758; &#xAC15;&#xC758;&#xB97C; &#xB9C8;&#xCE58;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. 1.4.2&#xC5D0;&#xC11C; &#xBD05;&#xC2DC;&#xB2E4;!</p>
 
                                 
                                 </section>
@@ -349,7 +385,7 @@ command /&#xC124;&#xC815;:
                 </a>
                 
                 
-                <a href="../Doit/" class="navigation navigation-next " aria-label="Next page: 실습">
+                <a href="04-02-Variables.html" class="navigation navigation-next " aria-label="Next page: 1.4.2 배열변수와 임시변수">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -360,7 +396,7 @@ command /&#xC124;&#xC815;:
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"1.4.1 변수에 대하여","level":"1.2.1.4","depth":3,"next":{"title":"실습","level":"1.2.2","depth":2,"path":"MinecraftSkript/Doit/README.md","ref":"./MinecraftSkript/Doit/README.md","articles":[]},"previous":{"title":"1.3 나만의 커맨드 만들기","level":"1.2.1.3","depth":3,"path":"MinecraftSkript/Tutorial/03-MakeOwnCommand.md","ref":"./MinecraftSkript/Tutorial/03-MakeOwnCommand.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters","comment","hide-published-with","github","edit-link"],"pluginsConfig":{"github":{"url":"https://github.com/lukekeum/GitBook"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"수정 요청하기","base":"https://github.com/lukekeum/GitBook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"comment":{"highlightCommented":true}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MinecraftSkript/Tutorial/04-01-Variables.md","mtime":"2019-09-30T16:15:34.869Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-30T16:16:32.026Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"1.4.1 변수에 대하여","level":"1.2.1.4","depth":3,"next":{"title":"1.4.2 배열변수와 임시변수","level":"1.2.1.5","depth":3,"path":"MinecraftSkript/Tutorial/04-02-Variables.md","ref":"./MinecraftSkript/Tutorial/04-02-Variables.md","articles":[]},"previous":{"title":"1.3 나만의 커맨드 만들기","level":"1.2.1.3","depth":3,"path":"MinecraftSkript/Tutorial/03-MakeOwnCommand.md","ref":"./MinecraftSkript/Tutorial/03-MakeOwnCommand.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters","comment","hide-published-with","github","edit-link"],"pluginsConfig":{"github":{"url":"https://github.com/lukekeum/GitBook"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"수정 요청하기","base":"https://github.com/lukekeum/GitBook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"comment":{"highlightCommented":true}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MinecraftSkript/Tutorial/04-01-Variables.md","mtime":"2019-10-03T06:02:37.947Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:56:47.508Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

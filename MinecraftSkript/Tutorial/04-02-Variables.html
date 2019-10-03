@@ -1,0 +1,415 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.4.2 배열변수와 임시변수 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-comment/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="05-Loops.html" />
+    
+    
+    <link rel="prev" href="04-01-Variables.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    안녕하세요?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    1. 마인크래프트 스크립트
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    튜토리얼
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="01-WhatIsSkript.html">
+            
+                <a href="01-WhatIsSkript.html">
+            
+                    
+                    1.1 왜 스크립트를써야하는가?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="02-HelloWorld.html">
+            
+                <a href="02-HelloWorld.html">
+            
+                    
+                    1.2 채팅창에 HelloWorld 띄우기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="03-MakeOwnCommand.html">
+            
+                <a href="03-MakeOwnCommand.html">
+            
+                    
+                    1.3 나만의 커맨드 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="04-01-Variables.html">
+            
+                <a href="04-01-Variables.html">
+            
+                    
+                    1.4.1 변수에 대하여
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.1.5" data-path="04-02-Variables.html">
+            
+                <a href="04-02-Variables.html">
+            
+                    
+                    1.4.2 배열변수와 임시변수
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="05-Loops.html">
+            
+                <a href="05-Loops.html">
+            
+                    
+                    1.5 반복문
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Doit/">
+            
+                <a href="../Doit/">
+            
+                    
+                    실습
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >1.4.2 배열변수와 임시변수</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="142-&#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xC640;-&#xC784;&#xC2DC;&#xBCC0;&#xC218;">1.4.2 &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xC640; &#xC784;&#xC2DC;&#xBCC0;&#xC218;</h1>
+<p>&#xC774; &#xAC15;&#xC758;&#xB294; 1.4.1 &#xAC15;&#xC758;&#xB97C; &#xAF2D; &#xBCF4;&#xACE0;&#xC624;&#xC154;&#xC57C; &#xC9C4;&#xD589;&#xC744; &#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xBC30;&#xC5F4;&#xBCC0;&#xC218;-&#xADF8;&#xB294;-&#xB204;&#xAD6C;&#xC778;&#xAC00;">&#xBC30;&#xC5F4;&#xBCC0;&#xC218;, &#xADF8;&#xB294; &#xB204;&#xAD6C;&#xC778;&#xAC00;?</h2>
+<p>&#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB294;, &#xC77C;&#xBC18;&#xBCC0;&#xC218;&#xC640; &#xBE44;&#xC2B7;&#xD569;&#xB2C8;&#xB2E4;. &#xB2E8;&#xC9C0; &#xC6A9;&#xB3C4;&#xAC00; &#xB2E4;&#xB97C; &#xBFD0;&#xC774;&#xC8E0;. &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB294; &#xBAA9;&#xB85D;&#xC744; &#xB9CC;&#xB4E4; &#xB54C; &#xB9CE;&#xC774; &#xC501;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;&#xC11C;, &#xC6B0;&#xB9AC;&#xAC00; &#xD018;&#xC2A4;&#xD2B8; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xB9CC;&#xB4E4;&#xC5C8;&#xB2E4;&#xACE0; &#xCE69;&#xC2DC;&#xB2E4;. &#xC774;&#xC81C;, &#xD018;&#xC2A4;&#xD2B8;&#xB97C; &#xCD94;&#xAC00;&#xD574;&#xC57C;&#xD569;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7F4;&#xB54C;, {&#xD018;&#xC2A4;&#xD2B8;.&#xBAA9;&#xB85D;.1}, {&#xD018;&#xC2A4;&#xD2B8;.&#xBAA9;&#xB85D;.2}, {&#xD018;&#xC2A4;&#xD2B8;.&#xBAA9;&#xB85D;.3}... &#xC774;&#xB7F0;&#xC2DD;&#xC73C;&#xB85C; &#xACC4;&#xC18D; &#xCD94;&#xAC00;&#xB97C; &#xD558;&#xB2E4;&#xBCF4;&#xBA74;, &#xB098;&#xC911;&#xC5D0; &#xD018;&#xC2A4;&#xD2B8; &#xBAA9;&#xB85D;&#xC744; &#xBD88;&#xB7EC;&#xC62C; &#xB54C;, &#xC880; &#xD798;&#xB4ED;&#xB2C8;&#xB2E4;. &#xADF8;&#xB798;&#xC11C;, &#xB9CE;&#xC740; &#xC0AC;&#xB78C;&#xB4E4;&#xC740;, &#xC774;&#xB7EC;&#xD55C; &#xBAA9;&#xB85D;&#xB4E4;&#xC744; &#xC800;&#xC7A5;&#xD560; &#xB54C;&#xC5D0;&#xB294;, &#xBAA9;&#xB85D;&#xC744; &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xC5D0; &#xC800;&#xC7A5;&#xC744; &#xD569;&#xB2C8;&#xB2E4;. &#xC65C;&#xB0D0;&#xD558;&#xBA74;, &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74;, &#xBD88;&#xD3B8;&#xD558;&#xC9C0;&#xB3C4; &#xC54A;&#xACE0;, &#xB098;&#xC911;&#xC5D0;, &#xBAA9;&#xB85D;&#xC744; &#xBD88;&#xB7EC;&#xC62C; &#xB54C; &#xC544;&#xC8FC; &#xD3B8;&#xD569;&#xB2C8;&#xB2E4;. &#xC774;&#xAC83; &#xB584;&#xBB38;&#xC5D0;, &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xC790;, &#xC774;&#xC81C; &#xD55C;&#xBC88; &#xC0AC;&#xC6A9;&#xBC29;&#xBC95;&#xC744; &#xC54C;&#xC544;&#xBCFC;&#xAE4C;&#xC694;?</p>
+<h3 id="&#xBC30;&#xC5F4;&#xBCC0;&#xC218;-&#xC0AC;&#xC6A9;&#xD558;&#xAE30;">&#xBC30;&#xC5F4;&#xBCC0;&#xC218; &#xC0AC;&#xC6A9;&#xD558;&#xAE30;</h3>
+<p>&#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC740;, &#xC77C;&#xBC18;&#xBCC0;&#xC218;&#xC640; &#xAC19;&#xC774; <code>{}</code> &#xC548;&#xC5D0; &#xC501;&#xB2C8;&#xB2E4;. &#xADF8;&#xB7EC;&#xBA74;, &#xAC11;&#xC790;&#xAE30; &#xC774;&#xB7F0; &#xBD84;&#xB4E4;&#xC774; &#xACC4;&#xC2E4;&#xAC81;&#xB2C8;&#xB2E4;. &quot;&#xC800;&#xB807;&#xAC8C; &#xC0AC;&#xC6A9;&#xD558;&#xBA74;, &#xC77C;&#xBC18;&#xBCC0;&#xC218;&#xD558;&#xACE0; &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB97C; &#xC5B4;&#xB5BB;&#xAC8C; &#xAD6C;&#xBD84;&#xD558;&#xC9C0;?&quot;&#xD558;&#xACE0; &#xAD81;&#xAE08;&#xD574; &#xD558;&#xC2DC;&#xB294; &#xBD84;&#xB4E4;&#xC774; &#xB9CE;&#xC744; &#xAECD;&#xB2C8;&#xB2E4;. &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xC640; &#xC77C;&#xBC18;&#xBCC0;&#xC218;&#xB97C; &#xAD6C;&#xBD84;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC5D0;&#xB294; <code>::</code>&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. &#xC608;&#xB97C; &#xB4E4;&#xC5B4;&#xC11C;, <code>{&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}</code>&#xC785;&#xB2C8;&#xB2E4;. &#xC5EC;&#xAE30;&#xC11C;, <code>::</code> &#xB4A4;&#xC5D0; <code>*</code>&#xC774; &#xBD99;&#xC5C8;&#xB294;&#xB370;, &#xC774;&#xAC83;&#xC740; &#xADF8; &#xBC30;&#xC5F4;&#xC548;&#xC5D0; &#xB4E4;&#xC5B4;&#xAC00; &#xC788;&#xB294; &#xBAA8;&#xB4E0;&#xAC83;&#xC744; &#xB098;&#xD0C0;&#xB0BC; &#xB54C; &#xC0AC;&#xC6A9;&#xD569;&#xB2C8;&#xB2E4;. &#xB098;&#xC911;&#xC5D0; &#xC81C;&#xAC00; &#xC608;&#xC81C; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xAC15;&#xC88C; &#xB97C; &#xC62C;&#xB9B4; &#xC608;&#xC815;&#xC785;&#xB2C8;&#xB2E4;. &#xADF8; &#xB54C; &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB97C; &#xC774;&#xD574;&#xD558;&#xC154;&#xB3C4; &#xC544;&#xC9C1; &#xB2A6;&#xC9C0; &#xC54A;&#xC558;&#xC73C;&#xB2C8;&#xAE4C;, &#xADF8;&#xB54C; &quot;&#xC544;~ &#xC774;&#xB7F4;&#xB54C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAD6C;&#xB098;..&quot; &#xD558;&#xACE0; &#xC774;&#xD574;&#xD558;&#xC2DC;&#xBA74; &#xB418;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0;, &#xC774;&#xAC74; &#xB098;&#xC911;&#xC5D0; loop &#xAC15;&#xC88C;&#xC5D0;&#xC11C;&#xB3C4; &#xC62C;&#xB9AC;&#xACA0;&#xC9C0;&#xB9CC;, {&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::1}&#xC5D0;&#xC11C;, &#xBC30;&#xC5F4;&#xBCC0;&#xC218; {&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::1} &#xC548;&#xC5D0; &#xC788;&#xB294; &#xAC12;&#xC774; <code>value</code>&#xC774;&#xACE0;, {&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::1}&#xC5D0; &#xC788;&#xB294; 1&#xC774; <code>index</code>&#xB77C;&#xACE0; &#xBCF4;&#xC2DC;&#xBA74; &#xB418;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h3 id="&#xBC30;&#xC5F4;&#xBCC0;&#xC218;-&#xD65C;&#xC6A9;&#xD558;&#xAE30;">&#xBC30;&#xC5F4;&#xBCC0;&#xC218; &#xD65C;&#xC6A9;&#xD558;&#xAE30;</h3>
+<p>&#xC790;, &#xC6B0;&#xB9AC;&#xAC00; 1.4.2&#xC5D0;&#xC11C; &#xB9CC;&#xB4E4;&#xC5C8;&#xB358; &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xC5F4;&#xC5B4;&#xBCFC;&#xAE4C;&#xC694;? &#xADF8;&#xB9AC;&#xACE0;, &#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xD30C;&#xC77C;&#xC744; &#xBC14;&#xAFD4;&#xBD05;&#xC2DC;&#xB2E4;.</p>
+<pre><code class="lang-JavaScript">command /&#xD655;&#xC778;:
+    trigger:
+        message <span class="hljs-string">&quot;%{&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}%&quot;</span>
+command /&#xB354;&#xD558;&#xAE30;:
+    trigger:
+        add <span class="hljs-string">&quot;&#xBC30;&#xC5F4;&#xBCC0;&#xC218;&quot;</span> to {&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}
+command /&#xBE7C;&#xAE30;:
+    trigger:
+        remove <span class="hljs-number">1</span> <span class="hljs-keyword">from</span> {&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}
+command /&#xC124;&#xC815;:
+    trigger:
+        <span class="hljs-keyword">delete</span> {&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}
+</code></pre>
+<p>&#xC790;, &#xADF8;&#xB7FC; &#xC774;&#xC81C; &#xD55C;&#xBC88; <code>/&#xD655;&#xC778;</code>&#xC744; &#xCCD0;&#xBCF4;&#xC2DC;&#xBA74;, <code>&lt;none&gt;</code>&#xC774; &#xB730;&#xAECD;&#xB2C8;&#xB2E4;. &#xC65C;&#xB0D0;&#xD558;&#xBA74;, &#xC544;&#xC9C1; &#xBCC0;&#xC218;&#xAC00; &#xC124;&#xC815; &#xB418;&#xC5B4; &#xC788;&#xC9C0; &#xC54A;&#xAE30; &#xB584;&#xBB38;&#xC774;&#xC8E0;. &#xC790;, &#xADF8;&#xB7EC;&#xBA74; &#xD55C;&#xBC88; <code>/&#xB354;&#xD558;&#xAE30;</code>&#xB97C; &#xCCD0;&#xBCFC;&#xAE4C;&#xC694;? &#xADF8;&#xB9AC;&#xACE0; <code>/&#xD655;&#xC778;</code>&#xC744; &#xB2E4;&#xC2DC; &#xD55C;&#xBC88; &#xCCD0; &#xBD05;&#xC2DC;&#xB2E4;. &#xADF8;&#xB7EC;&#xBA74;, <code>&#xBC30;&#xC5F4;&#xBCC0;&#xC218;</code>&#xB77C;&#xACE0; &#xB739;&#xB2C8;&#xB2E4;. &#xADF8;&#xB9AC;&#xACE0;, &#xB2E4;&#xC2DC; &#xD55C;&#xBC88; <code>/&#xB354;&#xD558;&#xAE30;</code>&#xB97C; &#xCE58;&#xACE0; <code>/&#xD655;&#xC778;</code>&#xC744; &#xCE58;&#xC2DC;&#xBA74; <code>&#xBC30;&#xC5F4;&#xBCC0;&#xC218; and &#xBC30;&#xC5F4;&#xBCC0;&#xC218;</code>&#xB77C;&#xACE0; &#xB730;&#xAECD;&#xB2C8;&#xB2E4;. &#xC774;&#xAC78; &#xBCF4;&#xBA74;, &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xC5D0;&#xC11C;&#xC758; <code>add</code>&#xB294; &#xBC30;&#xC5F4;&#xBCC0;&#xC218; <code>{&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}</code>&#xC5D0; <code>&quot;&#xBC30;&#xC5F4;&#xBCC0;&#xC218;&quot;</code>&#xB77C;&#xB294; &#xBB38;&#xC790;&#xB97C; &#xCD94;&#xAC00;&#xD558;&#xB294; &#xAC83;&#xC744; &#xC54C; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+<br></p>
+<p>&#xADF8;&#xB7FC;, &#xC774;&#xC81C; &#xD55C;&#xBC88; <code>/&#xBE7C;&#xAE30;</code>&#xB97C; &#xD655;&#xC778; &#xD574; &#xBCFC;&#xAE4C;&#xC694;? <code>/&#xBE7C;&#xAE30;</code>&#xB97C; &#xCE58;&#xACE0; <code>/&#xD655;&#xC778;</code>&#xC744; &#xCCD0; &#xBCF4;&#xC2DC;&#xBA74;, &#xC774;&#xC81C; <code>&#xBC30;&#xC5F4;&#xBCC0;&#xC218;</code>&#xB77C;&#xB294; &#xAC83;&#xC774; &#xB098;&#xC62C;&#xAC81;&#xB2C8;&#xB2E4;. &#xC774;&#xAC78; &#xBCF4;&#xC2DC;&#xBA74;, <code>remove</code>&#xB294; &#xBC30;&#xC5F4;&#xBCC0;&#xC218; <code>{&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}</code>&#xC5D0;&#xC11C; <code>&#xBC30;&#xC5F4;&#xBCC0;&#xC218;</code>&#xB77C;&#xB294; &#xBB38;&#xC790;&#xC5F4; &#xD558;&#xB098;&#xB97C; &#xC81C;&#xAC70;&#xD55C;&#xB2E4;&#xB294; &#xAC83;&#xC744; &#xC544;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;.
+<br></p>
+<p>&#xB9C8;&#xC9C0;&#xB9C9;&#xC73C;&#xB85C;, <code>/&#xC124;&#xC815;</code>&#xC744; &#xC54C;&#xC544;&#xBD05;&#xC2DC;&#xB2E4;. <code>/&#xC124;&#xC815;</code>&#xC744; &#xCE58;&#xACE0;, <code>/&#xD655;&#xC778;</code>&#xC744; &#xCCD0; &#xBCF4;&#xC2DC;&#xBA74;, <code>&lt;none&gt;</code>&#xC774; &#xB730;&#xAECD;&#xB2C8;&#xB2E4;. &#xC774;&#xAC78; &#xBCF4;&#xBA74;, <code>delete</code>&#xB294; &#xBC30;&#xC5F4;&#xBCC0;&#xC218; <code>{&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}</code>&#xB97C; &#xCD08;&#xAE30;&#xD654; &#xC2DC;&#xD0A8;&#xB2E4;&#xACE0; &#xC544;&#xC2DC;&#xBA74; &#xB420;&#xAEBC; &#xAC19;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<h2 id="&#xC784;&#xC2DC;&#xBCC0;&#xC218;">&#xC784;&#xC2DC;&#xBCC0;&#xC218;</h2>
+<p>&#xC784;&#xC2DC;&#xBCC0;&#xC218;&#xC5D0; &#xAD00;&#xD55C; &#xB0B4;&#xC6A9;&#xC740; &#xC9E7;&#xAE30;&#xC5D0; &#xC774;&#xBC88;&#xAC15;&#xC758;&#xC5D0; &#xB123;&#xC5C8;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC784;&#xC2DC;&#xBCC0;&#xC218;&#xB294; 1.4.1&#xC5D0;&#xC11C; &#xB9D0;&#xC500; &#xB4DC;&#xB838;&#xB4EF;&#xC774;, &#xC784;&#xC2DC;&#xC801;&#xC73C;&#xB85C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xBCC0;&#xC218;&#xB77C;&#xACE0; &#xBCF4;&#xC2DC;&#xBA74; &#xB420; &#xB4EF;&#xD569;&#xB2C8;&#xB2E4;. &#xC784;&#xC2DC;&#xBCC0;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC740; <code>{_&#xBCC0;&#xC218;&#xC774;&#xB984;}</code>&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC2DC;&#xBA74; &#xB418;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;. &#xC784;&#xC2DC;&#xBCC0;&#xC218;&#xC5D0;&#xC11C;&#xB3C4; &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xC744;&#xAE4C;? &#xD558;&#xC2DC;&#xB294; &#xBD84;&#xB4E4;&#xC774; &#xACC4;&#xC2E4;&#xAECD;&#xB2C8;&#xB2E4;. &#xBB3C;&#xB860; &#xC0AC;&#xC6A9;&#xC774; &#xAC00;&#xB2A5;&#xD569;&#xB2C8;&#xB2E4;. <code>{_&#xBC30;&#xC5F4;&#xBCC0;&#xC218;::*}</code>&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC2DC;&#xBA74; &#xC784;&#xC2DC;&#xC801;&#xC73C;&#xB85C; &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xC2E4; &#xC218; &#xC788;&#xC2B5;&#xB2C8;&#xB2E4;. &#xD558;&#xC9C0;&#xB9CC;, &#xC784;&#xC2DC;&#xBCC0;&#xC218;&#xB294; 1.4.1&#xC5D0;&#xC11C; &#xB9D0;&#xC500; &#xB4DC;&#xB838;&#xB4EF;&#xC774;, &#xC77C;&#xD68C;&#xC6A9; &#xBE44;&#xB2D0;&#xBD09;&#xC9C0;&#xCC98;&#xB7FC; &#xD55C;&#xBC88;&#xBC16;&#xC5D0; &#xC0AC;&#xC6A9;&#xC744; &#xBABB;&#xD558;&#xAE30;&#xC5D0; &#xC77C;&#xBC18;&#xBCC0;&#xC218;&#xB098; &#xBC30;&#xC5F4;&#xBCC0;&#xC218;&#xCC98;&#xB7FC; &#xD65C;&#xC6A9;&#xD558;&#xC2E4; &#xC218;&#xB294; &#xC5C6;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+<p>&#xB2E4;&#xC74C; &#xAC15;&#xC758;&#xC5D0;&#xC11C;&#xB294; &#xBC18;&#xBCF5;&#xBB38;&#xC744; &#xC54C;&#xB824;&#xB4DC;&#xB9AC;&#xB3C4;&#xB85D;&#xD558;&#xACA0;&#xC2B5;&#xB2C8;&#xB2E4;.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="04-01-Variables.html" class="navigation navigation-prev " aria-label="Previous page: 1.4.1 변수에 대하여">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="05-Loops.html" class="navigation navigation-next " aria-label="Next page: 1.5 반복문">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.4.2 배열변수와 임시변수","level":"1.2.1.5","depth":3,"next":{"title":"1.5 반복문","level":"1.2.1.6","depth":3,"path":"MinecraftSkript/Tutorial/05-Loops.md","ref":"./MinecraftSkript/Tutorial/05-Loops.md","articles":[]},"previous":{"title":"1.4.1 변수에 대하여","level":"1.2.1.4","depth":3,"path":"MinecraftSkript/Tutorial/04-01-Variables.md","ref":"./MinecraftSkript/Tutorial/04-01-Variables.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-chapters","comment","hide-published-with","github","edit-link"],"pluginsConfig":{"github":{"url":"https://github.com/lukekeum/GitBook"},"search":{},"collapsible-chapters":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"hide-published-with":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"수정 요청하기","base":"https://github.com/lukekeum/GitBook/edit/master"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"comment":{"highlightCommented":true}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"MinecraftSkript/Tutorial/04-02-Variables.md","mtime":"2019-10-03T06:02:38.820Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-03T07:56:47.508Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-comment/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-hide-published-with/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
